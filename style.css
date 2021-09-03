@@ -90,6 +90,12 @@ input[type = "range"]:hover{
     justify-content: center;
     color: #cefffa;
 }
+
+.left #volume_icon{
+    background: transparent;
+    border: transparent;
+}
+
 .left .volume p{
     font-size: 15px;
     border-radius: 50%;
