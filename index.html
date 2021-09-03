@@ -20,12 +20,12 @@
         <img id="track_image" />
         <div class="volume">
           <p id="volume_show">90</p>
-          <i
-            class="fa fa-volume-up"
-            aria-hidden="true"
-            id="volume_icon"
-            onclick="mute_sound()"
-          ></i>
+          <button onclick="mute_sound()" id="volume_icon">
+            <i
+              class="fa fa-volume-up"
+              aria-hidden="true"
+            ></i>
+          </button>
           <input
             type="range"
             min="0"
