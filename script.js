@@ -23,35 +23,35 @@ let track = document.createElement('audio');
 
 //All songs list
 let All_song = [
-    {
-        name: "first song",
+   {
+        name: "F.R.I.E.N.D.S. Title Track",
         path: "music/song1.mp3",
         img: "img/img1.jpg",
-        singer: "first singer"
+        singer: "The Rembrandts"
     },
     {
-        name: "second song",
+        name: "You Are The Reason",
         path: "music/song2.mp3",
         img: "img/img2.jpg",
-        singer: "second singer"
+        singer: "Calum Scott"
     },
     {
-        name: "third song",
+        name: "Let Me Down Slowly",
         path: "music/song3.mp3",
         img: "img/img3.jpg",
-        singer: "third singer"
+        singer: "Alec Benjamin"
     },
     {
-        name: "fourth song",
+        name: "No Lie",
         path: "music/song4.mp3",
         img: "img/img4.jpg",
-        singer: "forth singer"
+        singer: "Sean Paul"
     },
     {
-        name: "fifth song",
+        name: "Circles",
         path: "music/song5.mp3",
         img: "img/img5.jpg",
-        singer: "fifth singer"
+        singer: "Post Malone "
     }
 ];
 
