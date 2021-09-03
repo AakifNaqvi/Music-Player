@@ -12,6 +12,7 @@ let present = document.querySelector('#present');
 let total = document.querySelector('#total');
 let artist = document.querySelector('#artist');
 
+let mute = false;
 let timer;
 let autoplay = 0;
 
@@ -74,11 +75,29 @@ function load_track(index_no) {
 load_track(index_no);
 
 //mute sound
-function mute_sound(){
+function mute_sound() {
+    if (mute == false) {
+        prev = volume.value;
+        muteVol();
+    } else {
+        unMute();
+    }
+}
+
+function muteVol() {
+    mute = true;
     track.volume = 0;
-    volume.value = 0;
     volume_show.innerHTML = 0;
-    volume.innerHTML = '<i class="fa fa-volume-off"></i>';
+    volume_icon.innerHTML = '<i class="fa fa-volume-off"></i>';
+}
+
+function unMute() {
+    mute = false;
+    volume_show.innerHTML = prev;
+    recent_volume.value = prev;
+    track.volume = 1;
+    volume.value = recent_volume.value;
+    volume_icon.innerHTML = '<i class="fa fa-volume-up"></i>';
 }
 
 //reset song slider
