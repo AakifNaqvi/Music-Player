@@ -23,7 +23,7 @@ let track = document.createElement('audio');
 
 //All songs list
 let All_song = [
-   {
+    {
         name: "F.R.I.E.N.D.S. Title Track",
         path: "music/song1.mp3",
         img: "img/img1.jpg",
